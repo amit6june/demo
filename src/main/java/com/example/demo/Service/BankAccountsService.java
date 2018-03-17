@@ -2,14 +2,10 @@ package com.example.demo.Service;
 
 import com.example.demo.dao.BankAccountsDao;
 import com.example.demo.domain.BankAccounts;
-import com.example.demo.domain.Topic;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.Arrays;
-import java.util.Calendar;
-import java.util.Date;
 import java.util.List;
 
 @Service("bankAccountsService")
@@ -34,7 +30,7 @@ public class BankAccountsService {
         return bankAccountDao.findAllBanks();
     }
 
-    public Topic getAccountDetails(String s) {
+    public BankAccounts getAccountDetails(String s) {
 
         return null;
     }

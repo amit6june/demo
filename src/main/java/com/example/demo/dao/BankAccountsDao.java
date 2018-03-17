@@ -1,7 +1,6 @@
 package com.example.demo.dao;
 
 import com.example.demo.domain.BankAccounts;
-import com.example.demo.domain.Topic;
 import org.hibernate.Criteria;
 import org.hibernate.criterion.Order;
 import org.springframework.stereotype.Repository;

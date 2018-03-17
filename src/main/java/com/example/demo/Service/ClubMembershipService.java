@@ -1,13 +1,10 @@
 package com.example.demo.Service;
 
 import com.example.demo.dao.MembershipDao;
-import com.example.demo.dao.TopicDao;
 import com.example.demo.domain.Memberships;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
-import java.util.List;
 
 @Service("ClubMembershipService")
 @Transactional(readOnly=false)

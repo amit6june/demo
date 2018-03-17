@@ -1,9 +1,7 @@
 package com.example.demo.controller;
 
 import com.example.demo.Service.BankAccountsService;
-import com.example.demo.Service.TopicService;
 import com.example.demo.domain.BankAccounts;
-import com.example.demo.domain.Topic;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.PathVariable;

@@ -1,11 +1,7 @@
 package com.example.demo.dao;
 
-import com.example.demo.domain.Memberships;
-import com.example.demo.domain.Topic;
 import com.example.demo.domain.User;
 import org.hibernate.Criteria;
-import org.hibernate.Hibernate;
-import org.hibernate.criterion.Order;
 import org.hibernate.criterion.Restrictions;
 import org.springframework.stereotype.Repository;
 
