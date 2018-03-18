@@ -2,6 +2,7 @@ package com.example.demo.Service;
 
 
 import com.example.demo.dao.UserDao;
+import com.example.demo.domain.Memberships;
 import com.example.demo.domain.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -23,5 +24,13 @@ public class UserService {
         //return topics;
     }
 
+
+    public void addUser(User user) {
+
+        System.out.println("Calling add membership of Club");
+
+        userDao.saveUser(user);
+
+    }
 
 }

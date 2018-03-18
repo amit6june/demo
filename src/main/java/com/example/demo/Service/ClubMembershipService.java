@@ -26,7 +26,7 @@ public class ClubMembershipService  implements MembershipService {
     @Override
     public void addMembership(Memberships membership) {
 
-        System.out.println("Calling add membership of Club---->>>>");
+        System.out.println("Calling add membership of Club");
 
         membershipDao.saveMyTopic(membership);
 

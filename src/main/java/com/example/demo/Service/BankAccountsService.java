@@ -21,7 +21,7 @@ public class BankAccountsService {
 
 
             return bankAccountDao.findAllBanks();
-        //return topics;
+
     }
 
 
@@ -30,13 +30,5 @@ public class BankAccountsService {
         return bankAccountDao.findAllBanks();
     }
 
-    public BankAccounts getAccountDetails(String s) {
-
-        return null;
-    }
-
-    public void addBankAccount(BankAccounts bankAccounts){
-
-    }
 
 }

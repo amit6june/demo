@@ -40,7 +40,7 @@ public class BankAccountController {
     public void addBankAccount(@RequestBody BankAccounts bankaccount) {
 
         System.out.println("This is coming here");
-        bankAccountsService.addBankAccount(bankaccount);
+        //bankAccountsService.addBankAccount(bankaccount);
 
     }
 }

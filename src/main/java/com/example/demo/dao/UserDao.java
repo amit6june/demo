@@ -1,5 +1,6 @@
 package com.example.demo.dao;
 
+import com.example.demo.domain.Memberships;
 import com.example.demo.domain.User;
 import org.hibernate.Criteria;
 import org.hibernate.criterion.Restrictions;
@@ -36,4 +37,13 @@ public class UserDao extends AbstractDao<Integer, User>{
 
         return user;
     }
+
+
+    public void saveUser(User user){
+
+
+        persist(user);
+
+    }
+
 }
