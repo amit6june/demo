@@ -1,11 +1,11 @@
 package com.example.demo.domain;
 
-public enum MemberStatus {
+public enum MembershipType {
 
     CLUBMEMBERSHIP("ClubMembership",1),
     GYMMEMBERSHIP("GymMembership",2);
 
-    MemberStatus(String description, Integer statusId) {
+    MembershipType(String description, Integer statusId) {
         this.description = description;
         this.statusId = statusId;
     }

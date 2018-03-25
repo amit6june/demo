@@ -64,7 +64,16 @@ public class User {
 
     //shall i create a object of one gym and club Sports club membership
 
-   // private List<Memberships> listMemberShips;
+    public List<Memberships> getListMemberShips() {
+        return listMemberShips;
+    }
+
+    public void setListMemberShips(List<Memberships> listMemberShips) {
+        this.listMemberShips = listMemberShips;
+    }
+
+    @OneToMany(mappedBy="user",cascade = CascadeType.ALL)
+    private List<Memberships> listMemberShips;
 
 
 

@@ -1,9 +1,7 @@
 package com.example.demo.controller;
 
-import com.example.demo.Service.BankAccountsService;
-import com.example.demo.Service.ClubMembershipService;
-import com.example.demo.Service.GymMembershipService;
 import com.example.demo.Service.MembershipService;
+import com.example.demo.Service.UserService;
 import com.example.demo.domain.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
@@ -20,14 +18,13 @@ import static org.springframework.web.bind.annotation.RequestMethod.POST;
 @RestController
 public class MembershipController {
 
-    //@Autowired
-   //private MembershipService membershipService;
+    @Autowired
+   private MembershipService membershipService;
+
 
     @Autowired
-    private GymMembershipService gymMembershipService;
+    private UserService userervice;
 
-    @Autowired
-    private ClubMembershipService clubMembershipService;
 
 
 
@@ -37,8 +34,8 @@ public class MembershipController {
         System.out.println("Calling membershipcontroller");
 
 
-        //return membershipService.getAllMemberShips();
-        return null;
+        return membershipService.getAllMemberShips();
+        //return null;
 
     }
 
@@ -49,44 +46,46 @@ public class MembershipController {
         //shall i create a new controller for gym and new for club
 
 
-        //return membershipService.getMembershipDetails(1);
-        return null;
+        return membershipService.getMembershipDetails(1);
+        //return null;
 
     }
 
     //Shall i create 2 methods addGymmemberhip and add clubmembership or only one addmembership
 
-    @RequestMapping(method = POST ,consumes = MediaType.APPLICATION_JSON_VALUE,value="/addMembership")
+    @RequestMapping(method = POST ,consumes = MediaType.APPLICATION_JSON_VALUE,value="/addMember")
     public void addClubMemberShip(@RequestBody  Memberships membership) {
 
 
      //depends on what has been sent from frontend
-        Memberships member =new GymMembership();
+        Memberships member =new Memberships();
 
         member.setJoiningDate(Calendar.getInstance().getTime());
-        member.setName("The name of membership");
+        member.setName("Stuff1");
 
+        User user=userervice.getuserById(1);
 
+        member.setUser(user);
 
 
         System.out.println("This is coming here");
-        clubMembershipService.addMembership(membership);
+        membershipService.addMembership(member);
 
     }
 
-    @RequestMapping(method = POST ,consumes = MediaType.APPLICATION_JSON_VALUE,value="/addGymMembership")
+    @RequestMapping(method = POST ,consumes = MediaType.APPLICATION_JSON_VALUE,value="/addmembership")
     public void addGymMemberShip(@RequestBody  Memberships membership) {
 
 
         //depends on what has been sent from frontend
-        Memberships member =new GymMembership();
+        Memberships member =new Memberships();
 
         member.setJoiningDate(Calendar.getInstance().getTime());
         member.setName("The name of membership");
 
 
         System.out.println("This is coming here");
-        gymMembershipService.addMembership(membership);
+        membershipService.addMembership(membership);
 
     }
 

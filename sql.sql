@@ -7,7 +7,8 @@ CREATE TABLE MEMBERSHIP (
    membershipId  int primary key,
     NAME varchar(255),
     MEMBER_STATUS varchar(255),
-    JOINING_DATE DATE
+    JOINING_DATE DATE,
+  USER_ID int
 );
 
 ALTER TABLE MEMBERSHIP MODIFY COLUMN membershipId INT auto_increment

@@ -6,7 +6,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
-//@Service("membershipService")
+
 public interface MembershipService {
 
 
@@ -16,4 +16,5 @@ public interface MembershipService {
     void addMembership(Memberships membership);
 
 
+    List getAllMemberShips();
 }
