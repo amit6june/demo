@@ -33,4 +33,15 @@ public class UserService {
 
     }
 
+    public User getuserById(Integer userId) {
+
+        System.out.println("Calling add membership of Club");
+
+        User user=userDao.getByKey(userId);
+
+        return user;
+
+    }
+
+
 }

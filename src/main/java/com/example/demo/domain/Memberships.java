@@ -9,7 +9,7 @@ import java.util.Date;
 public class  Memberships {
 
 
-
+// There is many to many betwen users and memberships
     public int getMembershipId() {
         return membershipId;
     }
@@ -44,20 +44,34 @@ public class  Memberships {
     @Column(name="NAME", unique=true, nullable=false)
     private String name;
 
-    public MemberStatus getMembershipType() {
+    public MembershipType getMembershipType() {
         return membershipType;
     }
 
-    public void setMembershipType(MemberStatus membershipType) {
+    public void setMembershipType(MembershipType membershipType) {
         this.membershipType = membershipType;
     }
 
     @Enumerated(EnumType.STRING)
     @Column(name="MEMBER_STATUS")
-    private MemberStatus membershipType;
+    private MembershipType membershipType;
 
     @Column(name="JOINING_DATE", unique=true, nullable=false)
     private Date joiningDate;
+
+
+    @ManyToOne(fetch=FetchType.LAZY)
+    @JoinColumn(name = "USER_ID")
+    private User user;
+
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
 
 
 

@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 
-public  abstract  class MemberAbstractClass {
+public   class MemberAbstractClass {
 
     List<Memberships> getAllMemberShips(){
         return null;
