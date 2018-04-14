@@ -10,12 +10,12 @@ import { RouterModule } from '@angular/router';
 import { AddUserComponent } from './user/add-user.component';
 import { AppRoutingModule } from './app.routing.module';
 import {HttpClientModule} from "@angular/common/http";
-
+//import {HttpClientModule} from "@angular/common/http";
 @NgModule({
   declarations: [
     AppComponent,
     UserComponent,
-    AddUserComponent   
+    AddUserComponent
   ],
   imports: [
     BrowserModule,
