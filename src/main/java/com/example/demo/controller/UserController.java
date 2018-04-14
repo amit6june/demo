@@ -39,14 +39,35 @@ public class UserController {
 
         for(User user:allusers){
 
-            System.out.println("From this side->"+user.getListMemberShips());
+          //  System.out.println("From this side->"+user.getListMemberShips());
         }
+
+
+        String user1=allusers.get(0).getUsername();
+
+
+        myi greetingfunction= () ->System.out.print("Hi lamba");
+
+        myi2 mylambda= (String s) ->s.length();
+        mylambda.lambatest2("Thisone");
 
 
         return allusers;
 
 
 
+    }
+
+    public void greet(){
+        System.out.print("I am greet");
+    }
+
+    interface myi{
+        void lambatest();
+    }
+
+    interface myi2{
+        int lambatest2(String abc);
     }
 
     @CrossOrigin(origins = "http://localhost:4200", maxAge = 3600)
@@ -59,6 +80,18 @@ public class UserController {
         userService.addUser(user);
 
     }
+
+    @CrossOrigin(origins = "http://localhost:4200", maxAge = 3600)
+    @RequestMapping(method = POST ,consumes = MediaType.APPLICATION_JSON_VALUE,value="/allmycollections")
+    public void colectionsExample(@RequestBody User user) {
+
+
+
+        System.out.println("This is coming here");
+
+
+    }
+
 
 
 }

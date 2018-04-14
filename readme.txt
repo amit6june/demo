@@ -335,9 +335,20 @@ https://jcoop.io/angular-2-practice-exercises/
 obsrrvable
 https://stackoverflow.com/questions/37364973/angular-promise-vs-observable
 
+javascript
+https://medium.freecodecamp.org/javascript-modules-a-beginner-s-guide-783f7d7a5fcc
 
 react
 https://jscomplete.com/
+
+
+javascript modules
+https://www.youtube.com/watch?v=jN4IM5tp1SE
+
+java collection
+https://www.journaldev.com/1260/collections-in-java-tutorial?utm_source=website&utm_medium=sidebar&utm_campaign=RecommendedTutorials-Sidebar-Widget
+
+https://www.javatpoint.com/java-arraylist
 
 All three classes implement the Map interface and offer mostly the same functionality. The most important difference is the order in which iteration through the entries will happen:
 
