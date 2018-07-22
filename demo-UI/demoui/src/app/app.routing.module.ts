@@ -1,12 +1,17 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { UserComponent } from './user/user.component';
+
 import {AddUserComponent} from './user/add-user.component';
 
+import {WelcomeComponent} from './welcome/welcome.component';
+
+
 const routes: Routes = [
-  { path: 'users', component: UserComponent },
+ { path: 'welcome', component: WelcomeComponent },
+  { path: '', redirectTo:'welcome',pathMatch:'full' },
   { path: 'add', component: AddUserComponent }
+   
 ];
 
 @NgModule({

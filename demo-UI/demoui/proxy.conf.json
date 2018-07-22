@@ -2,7 +2,7 @@
 
 {
 	"/users": {
-		"target": "http://localhost:8080/allusers",
+		"target": "http://localhost:8081/allusers",
 		"secure": false
 	}
 }   

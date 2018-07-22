@@ -24,6 +24,7 @@ public class UserController {
 
     @CrossOrigin(origins = "http://localhost:4200", maxAge = 3600)
     @RequestMapping("/allusers")
+
     public List<User> getAllTopics() {
 
         List<User> allusers=new ArrayList<>();
@@ -39,7 +40,7 @@ public class UserController {
 
         for(User user:allusers){
 
-            System.out.println("From this side->"+user.getListMemberShips());
+//            System.out.println("From this side->"+user.getListMemberShips());
         }
 
 

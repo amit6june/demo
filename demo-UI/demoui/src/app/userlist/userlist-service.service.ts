@@ -11,13 +11,13 @@ const httpOptions = {
 };
 
 @Injectable()
-export class UserService {
+export class UserlistServiceService {
 
     constructor(private http:HttpClient) {}
 
-    private userUrl = 'http://localhost:8080/allusers';
+    private userUrl = 'http://localhost:8081/allusers';
 
- private addUser = 'http://localhost:8080/addUser';
+ private addUser = 'http://localhost:8081/addUser';
 
      private _url:string='http://localhost:8808/mydata.json';
 
@@ -41,3 +41,4 @@ public getUsers1() {
   }
 
 }
+

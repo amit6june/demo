@@ -273,9 +273,21 @@ product - beverage/dairy/food/grocery
 category -chai/biscuit/pepsi
 
 
+js
+https://www.jvandemo.com/a-10-minute-primer-to-javascript-modules-module-formats-module-loaders-and-module-bundlers/
+https://medium.com/sungthecoder/javascript-module-module-loader-module-bundler-es6-module-confused-yet-6343510e7bde
 
 
+https://juristr.com/blog/2017/03/angular-modules-vs-es6-modules/
+git
+https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell
 
+functional
+https://medium.com/@cscalfani/goodbye-object-oriented-programming-a59cda4c0e53
+
+
+static method in java
+https://stackoverflow.com/questions/129267/why-no-static-methods-in-interfaces-but-static-fields-and-inner-classes-ok-pr/135722#135722
 
 
 ager one to many karte hain
@@ -360,4 +372,31 @@ to learn all type of relationships
 
 
 5. many to many - usually we use join table
+
+
+what all things i can implement in the application:
+
+1.microservices
+2.kafka - logstash
+3.Access token  ???
+4. Sprig security ??
+json web token ????
+citibank authentication ?????
+apache mq
+load balancer
+docker
+tensor flow
+python
+kibana
+kubernotes docker swarm
+https certificate install
+oath2
+jwt
+open ssl
+keystore - jwt and token encrypt decrypt
+jsypt
+pgp file encryption
+authenticate with third party
+tdd -mockito
+
 

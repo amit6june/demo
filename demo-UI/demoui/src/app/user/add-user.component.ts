@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 import { User } from '../models/user.model';
-import { UserService } from './user.service';
+import { AddUserServiceService } from './adduser.service';
 
 @Component({
   selector: 'app-add-user',
@@ -12,7 +12,7 @@ import { UserService } from './user.service';
 export class AddUserComponent implements OnInit {
 
  user: User = new User();
-  constructor(private router: Router, private userService: UserService) { }
+  constructor(private router: Router, private userService: AddUserServiceService) { }
 
   createUser(): void {
     this.userService.createUser(this.user)

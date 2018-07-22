@@ -64,9 +64,9 @@ public class User {
 
     //shall i create a object of one gym and club Sports club membership
 
-    public List<Memberships> getListMemberShips() {
-        return listMemberShips;
-    }
+   // public List<Memberships> getListMemberShips() {
+   //     return listMemberShips;
+   // }
 
     public void setListMemberShips(List<Memberships> listMemberShips) {
         this.listMemberShips = listMemberShips;
