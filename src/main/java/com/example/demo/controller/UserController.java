@@ -29,37 +29,17 @@ public class UserController {
 
         List<User> allusers=new ArrayList<>();
         allusers= userService.getAllUser();
-
-       //  I will create different types of Map here to understand whats happening
-        // SO that i know what all maps are used and when they can be used,
-
         // I will create a loop in java 8
-
         //allusers.forEach(alluser-> System.out.println(alluser.getUsername()));
-
-
         for(User user:allusers){
-
-//            System.out.println("From this side->"+user.getListMemberShips());
         }
-
-
         return allusers;
-
-
-
     }
 
     @CrossOrigin(origins = "http://localhost:4200", maxAge = 3600)
     @RequestMapping(method = POST ,consumes = MediaType.APPLICATION_JSON_VALUE,value="/addUser")
     public void addUser(@RequestBody User user) {
-
-
-
         System.out.println("This is coming here");
         userService.addUser(user);
-
     }
-
-
 }

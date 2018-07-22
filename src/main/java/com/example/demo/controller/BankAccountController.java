@@ -22,25 +22,17 @@ public class BankAccountController {
 
     @RequestMapping("/allbankAccounts")
     public List<BankAccounts> getAllBankAccounts() {
-
-
-        return bankAccountsService.getAllAccounts();
-
+            return bankAccountsService.getAllAccounts();
     }
 
     @RequestMapping("/bankaccount/{id}")
     public List<BankAccounts> getBankAccount(@PathVariable String id) {
-
-
         return bankAccountsService.getAllBanksAccount();
-
     }
 
     @RequestMapping(method = POST ,consumes = MediaType.APPLICATION_JSON_VALUE,value="/addBank")
     public void addBankAccount(@RequestBody BankAccounts bankaccount) {
-
         System.out.println("This is coming here");
         //bankAccountsService.addBankAccount(bankaccount);
-
     }
 }
